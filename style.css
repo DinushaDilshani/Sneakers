@@ -1,0 +1,106 @@
+h1 {
+    margin: 0px;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    color: rgb(253, 168, 10);
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+.nav {
+    padding-top: 10px;
+    padding-left: 7%;
+    padding-right: 5%;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-color: #fff #fff black #fff;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #0581c9;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.brand {
+    display: block;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+
+
+li {
+    display: list-item;
+    
+}
+a{
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+}
+
+    
+.activeNav {
+    color: rgb(88, 245, 82);
+    
+}
+a:hover {
+    color: rgb(88, 245, 82);
+    text-decoration: underline;
+}
+.gallery {
+    
+    padding: 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.description{
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(65, 158, 158);
+}
+footer {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #323232;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+   
+        
+    
+    .nav{
+        display: block;
+    }
+}

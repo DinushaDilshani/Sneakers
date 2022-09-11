@@ -1,0 +1,131 @@
+h1 {
+    margin: 0px;
+}
+
+.nav {
+    padding-top: 10px;
+    padding-left: 7%;
+    padding-right: 5%;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-color: #fff #fff #fff #fff;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0581c9;
+    color: #fff;
+}
+.brand {
+    display: block;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    color: rgb(253, 168, 10);
+    }
+    
+    @keyframes slidein {
+      0% {
+        margin-left: 0%;
+      }
+      50% {
+        margin-left: 300px;
+      }
+      100% {
+        margin-left: 0%;
+      }
+    }
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+li {
+    display: list-item;
+    
+}
+a{
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+}
+
+    
+.activeNav {
+    color: rgb(88, 245, 82);
+}
+a:hover {
+    color: rgb(88, 245, 82);
+    text-decoration: underline;
+}
+.topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+footer {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #323232;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+.icon{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}
+b{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.desc{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+
+}
+.subInfo{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #008000;
+    background-color: rgb(241, 252, 248);
+    
+}
+@media only screen and (max-width: 1200px) {
+   
+    .nav{
+        display: block;
+    }    
+
+    .info {
+        display: block;
+    }
+}    
